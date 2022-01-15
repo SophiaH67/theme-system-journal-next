@@ -9,10 +9,12 @@ This is a web version of CGP's journal.
 /trackerobjectives/:id = {
   title: String,
   description: String,
+  owner: String, # User ID
 }
 /circles/:id = {
   date: Date, # 1 circle per day, this date is the date of the circle at 01:00 UTC
   parent: DocumentReference,
   value: Number, # 0,1,2
+  owner: String, # User ID
 }
 ```
